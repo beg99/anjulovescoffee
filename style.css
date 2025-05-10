@@ -86,3 +86,34 @@ section {
 #lang-toggle:hover {
   background-color: #5a3e2d;
 }
+/* Latte Art Gallery Container */
+.latte-art-gallery {
+  background-color: #f7eee5; /* warm latte beige */
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+/* Latte Art Images */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  box-shadow: 0 4px 8px rgba(111, 78, 55, 0.4); /* warm soft shadow */
+  filter: contrast(105%) saturate(115%);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(111, 78, 55, 0.6);
+  filter: contrast(110%) saturate(125%);
+}
