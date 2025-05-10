@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barista Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <button id="lang-toggle">Deutsch 🇩🇪</button>
+  <header>
+    <h1>Hi, I'm ANJU!</h1>
+     <p>
+      <span class="en">
+        I am Anju Watanabe (渡邉杏樹) a really passionate barista from Japan ready to jump into the German coffee scene!
+      </span>
+      <span class="de" style="display: none;">
+         Ich bin Anju Watanabe (渡邉杏樹), eine wirklich leidenschaftliche Barista aus Japan, die bereit ist, in die deutsche Kaffeeszene einzusteigen!
+      </span>
+    </p>
+  </header>
+
+  <section class="about-me">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <img src="anju.jpeg" alt="Anju smiling with a coffee" class="profile-pic">
+     <p>
+      <span class="en">
+          I'm Anju, a dedicated barista originally from Japan 🇯🇵, now living in Germany 🇩🇪.
+      I’ve spent the past few years mastering the art of coffee — from pulling the perfect espresso shot
+      to pouring smooth, creative latte art. I believe every cup tells a story, and I love bringing
+      people joy through small details and warm flavors. I'm always experimenting and improving.
+      </span>
+      <span class="de" style="display: none;">
+          Ich bin Anju, eine engagierte Barista, die ursprünglich aus Japan stammt 🇯🇵 und jetzt in Deutschland lebt 🇩🇪.
+      Ich habe die letzten Jahre damit verbracht, die Kunst des Kaffees zu meistern - vom perfekten Espresso
+ bis hin zu sanften, kreativen Latte Art. Ich glaube, dass jede Tasse eine Geschichte erzählt, und ich liebe es,
+ Menschen durch kleine Details und warme Aromen Freude zu bereiten.
+ ich bin immer am Experimentieren und Verbessern.
+      </span>
+    </p>
+  </div>
+</section>
+
+  <section class="latte-art-gallery">
+    <h2>My Latte Art</h2>
+    <div class="gallery">
+      <img src="latte1.png" alt="Latte art 1">
+      <img src="latte2.png" alt="Latte art 2">
+      <img src="latte3.png" alt="Latte art 3">
+    </div>
+  </section>
+
+
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:aj.info.aw@gmail.com">aj.info.aw@gmail.com</a></p>
+  </section>
+  <script>
+  const toggleBtn = document.getElementById("lang-toggle");
+  let lang = "en";
+
+  toggleBtn.addEventListener("click", () => {
+    lang = lang === "en" ? "de" : "en";
+
+    // Update button label
+    toggleBtn.textContent = lang === "en" ? "Deutsch 🇩🇪" : "English 🇬🇧";
+
+    // Show/hide text
+    document.querySelectorAll(".en").forEach(el => {
+      el.style.display = lang === "en" ? "inline" : "none";
+    });
+    document.querySelectorAll(".de").forEach(el => {
+      el.style.display = lang === "de" ? "inline" : "none";
+    });
+  });
+</script>
+</body>
+</html>

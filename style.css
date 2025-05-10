@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fdf6f0;
+  color: #333;
+}
+
+header {
+  background-color: #f4e2d8;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.latte-art-gallery .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact a {
+  color: #8b4513;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+.about-me {
+  background-color: #fffaf2;
+  padding: 20px;
+  border-left: 6px solid #d6a97d;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#lang-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #6f4e37;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95em;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+#lang-toggle:hover {
+  background-color: #5a3e2d;
+}
